@@ -1,23 +1,24 @@
 package co.com.crediya.model.loan;
+import co.com.crediya.model.loantype.LoanType;
+import co.com.crediya.model.state.State;
 import lombok.Builder;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-//import lombok.NoArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-//@NoArgsConstructor
+@NoArgsConstructor
 @AllArgsConstructor
 @Builder(toBuilder = true)
 public class Loan {
 
-    private String id;
+    private Long id;
     private String customerDocument;
     private Double amount;
     private Integer term;
     private String email;
-    private String stateId;
-    private String loanTypeId;
-
+    private State state;
+    private LoanType loanType;
 }

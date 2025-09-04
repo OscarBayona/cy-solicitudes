@@ -4,5 +4,5 @@ import co.com.crediya.model.loantype.LoanType;
 import reactor.core.publisher.Mono;
 
 public interface LoanTypeRepository {
-    Mono<LoanType> findById(String loanTypeId);
+    Mono<LoanType> findById(Long loanTypeId);
 }

@@ -1,13 +1,12 @@
 package co.com.crediya.model.loantype;
-import lombok.Builder;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-//import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+import lombok.NoArgsConstructor;
+
 
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder(toBuilder = true)
 public class LoanType {
     private Long id;
@@ -16,5 +15,4 @@ public class LoanType {
     private Double maxAmount;
     private Double interestRate;
     private Boolean autoValidation;
-    private Boolean automaticValidation;
 }
